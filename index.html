@@ -1,0 +1,404 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Nova Beauty · salón krásy v Prievidzi — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh webu salónu krásy Nova Beauty v Prievidzi: kaderníctvo, kozmetika, nechty, masáže a parochne.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='3' fill='%23B8945A'/%3E%3Ctext x='16' y='23' font-family='serif' font-size='20' text-anchor='middle' fill='%233B2D14'%3EN%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --wall:#E5E3DF; --wall2:#D8D5CF; --paper:#F1F0ED;
+  --ink:#1B2426; --ink2:#46524F;
+  --petrol:#16262A; --petrol2:#213539; --petrol3:#2E4549;
+  --brass:#B8945A; --brass-l:#E0CC9B; --brass-d:#7A5F2E; --engr:#36290F;
+  --line:rgba(27,36,38,.16); --line-d:rgba(224,204,155,.26);
+  --serif:"DM Serif Display",Georgia,serif; --sans:Outfit,system-ui,sans-serif;
+  --pad:clamp(16px,4vw,48px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font:400 17px/1.55 var(--sans);color:var(--ink);background:var(--wall);padding-bottom:0}
+img,svg{max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--brass-d);outline-offset:3px}
+.dark :focus-visible,.notice :focus-visible,footer :focus-visible{outline-color:var(--brass-l)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--pad)}
+.lab{font:500 12px/1.2 var(--sans);letter-spacing:.17em;text-transform:uppercase}
+.num{font-variant-numeric:tabular-nums}
+
+/* pruh */
+.notice{background:var(--petrol);color:#E9E6DF;font-size:13.5px;line-height:1.4;text-align:center;padding:9px var(--pad)}
+
+/* header */
+header.top{background:var(--wall);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:28px;min-height:76px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-plate{font:400 23px/1 var(--serif);color:var(--engr);background:linear-gradient(115deg,#CDB07A,#E3CF9F 30%,#BF9C5E 65%,#D3B87F);padding:9px 14px 8px;border-radius:2px;box-shadow:inset 0 0 0 1px rgba(80,58,22,.45),inset 0 1px 0 rgba(255,255,255,.55);text-shadow:0 1px 0 rgba(255,244,214,.5);white-space:nowrap}
+.logo small{font:500 11px/1.25 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--ink2)}
+nav.main{margin-left:auto;display:flex;gap:30px}
+nav.main a{text-decoration:none;font-size:15px;font-weight:500;padding:12px 0;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .2s}
+nav.main a:hover{background-size:100% 1px}
+.hd-tel{display:flex;flex-direction:column;line-height:1.2;text-decoration:none;font-weight:500;font-size:16px}
+.hd-tel small{font:500 10.5px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--ink2);margin-bottom:4px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;font:500 15px/1 var(--sans);letter-spacing:.04em;text-decoration:none;border:1px solid var(--ink);background:var(--ink);color:#F4F1EA;border-radius:2px;transition:background .2s,color .2s}
+.btn:hover{background:transparent;color:var(--ink)}
+.btn.brass{background:var(--brass);border-color:var(--brass);color:var(--engr)}
+.btn.brass:hover{background:transparent;color:var(--brass-l)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#F4F1EA}
+header.top .btn{min-height:44px;padding:0 20px}
+
+/* hero */
+.hero{position:relative;background:var(--wall) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .09 0 0 0 0 .14 0 0 0 0 .14 0 0 0 .08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(32px,6vw,88px);align-items:center;padding-top:clamp(40px,6vw,76px);padding-bottom:clamp(44px,6vw,80px);min-height:min(600px,82vh)}
+.hero h1{font:400 clamp(58px,9.4vw,124px)/.92 var(--serif);letter-spacing:-.012em;margin:18px 0 26px}
+.hero h1 span{display:block;font-style:italic;color:var(--brass-d);font-size:.46em;line-height:1.1;letter-spacing:0;margin-top:14px}
+.hero .lab{color:var(--ink2)}
+.quote{font:400 italic 22px/1.4 var(--serif);max-width:30ch;padding-left:18px;border-left:1px solid var(--brass-d)}
+.quote cite{display:block;font:500 12px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;font-style:normal;color:var(--ink2);margin-top:10px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+
+/* vchodová tabuľa */
+.frame{position:relative;padding:clamp(18px,3vw,30px);border:1px solid var(--line);outline:1px solid var(--line);outline-offset:-10px;max-width:540px;margin-left:auto;width:100%}
+.plate{position:relative;padding:clamp(28px,4vw,40px) clamp(22px,4vw,38px) clamp(14px,2vw,22px);background:
+  repeating-linear-gradient(90deg,rgba(255,255,255,.07) 0 1px,transparent 1px 4px),
+  linear-gradient(115deg,#C9AA70 0%,#E6D3A4 17%,#BE9B5D 40%,#D5BB82 63%,#A68244 100%);
+  color:var(--engr);text-shadow:0 1px 0 rgba(255,244,214,.55);
+  box-shadow:inset 0 0 0 1px rgba(80,58,22,.5),inset 0 1px 0 rgba(255,255,255,.65),0 26px 34px -22px rgba(22,38,42,.65),0 2px 0 rgba(22,38,42,.18)}
+.plate::before{content:"";position:absolute;inset:11px;border:1px solid rgba(54,41,15,.42);pointer-events:none}
+.screw{position:absolute;width:13px;height:13px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#F3E6BF,#B08C50 62%,#6F5425);box-shadow:0 1px 1px rgba(40,28,8,.5)}
+.screw::after{content:"";position:absolute;left:2px;right:2px;top:50%;height:1.5px;margin-top:-.75px;background:#4d3a15;transform:rotate(var(--r,35deg))}
+.screw:nth-of-type(1){top:16px;left:16px}.screw:nth-of-type(2){top:16px;right:16px;--r:110deg}.screw:nth-of-type(3){bottom:16px;left:16px;--r:75deg}.screw:nth-of-type(4){bottom:16px;right:16px;--r:10deg}
+.plate-h{font:500 12px/1.2 var(--sans);letter-spacing:.3em;text-transform:uppercase;text-align:center;padding-bottom:16px}
+.plate ul{list-style:none}
+.plate li{border-top:1px solid rgba(54,41,15,.5);box-shadow:0 -1px 0 rgba(255,244,214,.45)}
+.plate li a{display:flex;align-items:baseline;justify-content:space-between;gap:14px;text-decoration:none;padding:15px 4px 14px;transition:background .2s}
+.plate li a:hover{background:rgba(255,244,214,.3)}
+.dept{font:400 clamp(27px,3.4vw,37px)/1.05 var(--serif)}
+.pn{font:500 clamp(16px,1.7vw,19px)/1 var(--sans);letter-spacing:.03em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.plate2{position:relative;margin:14px auto 0;width:86%;text-align:center;padding:13px 18px;text-decoration:none;display:block;background:linear-gradient(115deg,#C9AA70,#E6D3A4 25%,#BE9B5D 60%,#D5BB82);color:var(--engr);text-shadow:0 1px 0 rgba(255,244,214,.55);box-shadow:inset 0 0 0 1px rgba(80,58,22,.5),inset 0 1px 0 rgba(255,255,255,.6),0 14px 22px -16px rgba(22,38,42,.6);font:500 12px/1.35 var(--sans);letter-spacing:.2em;text-transform:uppercase}
+.plate2:hover{filter:brightness(1.06)}
+
+/* dôvera */
+.trust{background:var(--petrol);color:#EDE9DF}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust .c{padding:22px 22px 22px 0;margin-right:22px;border-right:1px solid var(--line-d)}
+.trust .c:last-child{border:0;margin:0}
+.trust .lab{color:var(--brass-l);margin-bottom:8px;font-size:11px}
+.trust b{display:block;font:500 28px/1.1 var(--sans);font-variant-numeric:tabular-nums}
+.trust b i{font-style:normal;color:var(--brass);font-size:.75em;margin-left:2px}
+.trust span.s{display:block;font-size:14px;color:#BFC7C2;margin-top:4px}
+
+/* cenník */
+.dark{background:var(--petrol2);color:#ECE8DE;position:relative}
+.sec{padding:clamp(56px,8vw,104px) 0}
+.sec-h{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-bottom:38px}
+.sec-h h2{font:400 clamp(44px,6.4vw,84px)/.95 var(--serif);letter-spacing:-.01em}
+.dark .sec-h h2{color:var(--brass-l)}
+.sec-h p{max-width:38ch;color:#BFC8C3;font-size:17px}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:0}
+.tab{font:500 13px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--brass-l);background:transparent;border:1px solid var(--line-d);border-bottom:0;padding:0 26px;min-height:52px;cursor:pointer;border-radius:2px 2px 0 0;transition:background .2s,color .2s}
+.tab:hover{background:rgba(224,204,155,.1)}
+.tab[aria-selected=true]{background:linear-gradient(115deg,#C9AA70,#E6D3A4 30%,#BE9B5D 70%,#D5BB82);color:var(--engr);border-color:transparent}
+.panel{display:none;border:1px solid var(--line-d);background:var(--petrol);grid-template-columns:1.7fr 1fr}
+.panel.on{display:grid}
+.plist{padding:clamp(22px,3.4vw,44px)}
+.grp{font:500 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--brass);margin:0 0 6px;padding-bottom:12px;border-bottom:1px solid var(--line-d)}
+.grp:not(:first-child){margin-top:34px}
+.plist ul{list-style:none}
+.plist li{display:flex;align-items:baseline;gap:14px;padding:15px 0}
+.plist li+li{border-top:1px solid rgba(224,204,155,.1)}
+.svc{font:400 22px/1.25 var(--serif)}
+.svc small{display:block;font:400 14px/1.4 var(--sans);color:#A9B5B0;margin-top:3px;letter-spacing:.02em}
+.dots{flex:1;border-bottom:1px dotted rgba(224,204,155,.35);transform:translateY(-6px);min-width:16px}
+.price{font:500 21px/1 var(--sans);font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--brass-l)}
+.price.q{font-size:15px;font-weight:400;color:#A9B5B0}
+.call{background:var(--petrol3);padding:clamp(24px,3.4vw,44px);display:flex;flex-direction:column;justify-content:center;gap:10px;border-left:1px solid var(--line-d)}
+.call .lab{color:var(--brass-l)}
+.call .big{font:300 clamp(34px,3.4vw,44px)/1.05 var(--sans);font-variant-numeric:tabular-nums;letter-spacing:.01em;text-decoration:none;white-space:nowrap}
+.call p{color:#B6C2BD;font-size:15px;margin-bottom:10px}
+.call .btn{align-self:flex-start}
+.call a.lnk{font-size:15px;color:var(--brass-l)}
+.note{margin-top:22px;color:#A9B5B0;font-size:14.5px;max-width:78ch}
+.note a{color:var(--brass-l)}
+
+/* mosadzná linka so skrutkami */
+.rule{position:relative;height:14px;max-width:calc(1180px - 2*var(--pad));margin:0 var(--pad) -7px;z-index:2}
+@media(min-width:1260px){.rule{margin-inline:auto}}
+.rule::before{content:"";position:absolute;left:14px;right:14px;top:6px;height:2px;background:linear-gradient(90deg,#A68244,#E6D3A4 30%,#BE9B5D 60%,#D5BB82);box-shadow:0 1px 0 rgba(255,255,255,.4)}
+.rule i{position:absolute;top:0;width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#F3E6BF,#B08C50 62%,#6F5425);box-shadow:0 1px 1px rgba(40,28,8,.5)}
+.rule i:first-child{left:0}.rule i:last-child{right:0}
+
+/* parochne */
+.wig{background:var(--wall)}
+.wig .wrap{display:grid;grid-template-columns:.7fr 1.3fr;gap:clamp(24px,6vw,88px);align-items:center}
+.wig svg{width:100%;max-width:280px;justify-self:center}
+.wig h2{font:400 clamp(38px,5.4vw,70px)/1 var(--serif);margin:14px 0 20px;letter-spacing:-.01em}
+.wig p{max-width:46ch;color:var(--ink2);margin-bottom:26px}
+.wig .lab{color:var(--brass-d)}
+
+/* kontakt */
+.contact{background:var(--wall2)}
+.contact .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(32px,6vw,88px)}
+.contact h2{font:400 clamp(40px,5.4vw,68px)/1 var(--serif);margin-bottom:28px}
+.enamel{display:flex;align-items:stretch;gap:0;margin:0 0 30px;width:max-content;max-width:100%;box-shadow:0 10px 18px -12px rgba(22,38,42,.6)}
+.enamel .st{background:#F5F5F2;color:#1B2B63;border:3px solid #1B2B63;outline:2px solid #F5F5F2;outline-offset:-6px;padding:10px 20px;font:500 13px/1.1 var(--sans);letter-spacing:.2em;text-transform:uppercase;display:flex;align-items:center}
+.enamel .r{background:#B3262D;color:#fff;font:600 30px/1 var(--sans);padding:0 18px;display:flex;align-items:center;border:3px solid #fff;outline:1px solid #B3262D;outline-offset:-4px;font-variant-numeric:tabular-nums}
+.enamel .b{background:#1B4F9C;color:#fff;font:600 30px/1 var(--sans);padding:0 18px;display:flex;align-items:center;border:3px solid #fff;border-left:0;outline:1px solid #1B4F9C;outline-offset:-4px}
+dl.info{display:grid;grid-template-columns:130px 1fr;gap:0}
+dl.info dt,dl.info dd{padding:15px 0;border-top:1px solid var(--line)}
+dl.info dt{font:500 12px/1.6 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--ink2);padding-top:18px}
+dl.info dd:last-of-type,dl.info dt:last-of-type{border-bottom:1px solid var(--line)}
+dl.info a{font-weight:500}
+.phones{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0;margin-bottom:26px}
+.phones li{border-top:1px solid var(--line);padding:26px 0}
+.phones li:nth-child(even){padding-left:22px;border-left:1px solid var(--line)}
+.phones a{text-decoration:none;display:block;min-height:44px}
+.phones .lab{color:var(--ink2);display:block;margin-bottom:6px}
+.phones .pn{font-size:26px;font-weight:500}
+.links{display:flex;flex-wrap:wrap;gap:12px}
+
+footer{background:var(--petrol);color:#C9D0CB;padding:30px 0 34px;font-size:14.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer b{font:400 22px/1 var(--serif);color:var(--brass-l)}
+footer a{color:var(--brass-l)}
+
+/* mobilná lišta */
+.mbar{display:none}
+@media(max-width:980px){
+  nav.main{display:none}.hd-tel{margin-left:auto}
+  .hero .wrap{grid-template-columns:1fr;min-height:0}
+  .frame{margin:0 auto}
+  .hero .wrap{gap:0}.hl{display:contents}.hl .lab{order:1}.hl h1{order:2;margin-bottom:30px}.frame{order:3}.quote{order:4;margin-top:36px}.cta-row{order:5}
+  .trust .wrap{grid-template-columns:1fr 1fr}
+  .trust .c:nth-child(2){border-right:0}
+  .trust .c:nth-child(-n+2){border-bottom:1px solid var(--line-d)}
+  .trust .c:nth-child(3){padding-top:22px}
+  .trust .c{margin-right:0;padding-right:16px}
+  .trust .c:nth-child(even){padding-left:22px;border-left:1px solid var(--line-d)}
+  .panel.on{grid-template-columns:1fr}
+  .call{border-left:0;border-top:1px solid var(--line-d)}
+  .wig .wrap,.contact .wrap{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  body{padding-bottom:calc(68px + env(safe-area-inset-bottom))}
+  header.top .wrap{gap:12px;min-height:66px}
+  .logo small,.hd-tel small{display:none}
+  .logo-plate{font-size:20px;padding:8px 11px 7px}
+  .hd-tel{display:none}
+  header.top .btn{margin-left:auto;padding:0 16px}
+  .quote{font-size:20px}
+  .cta-row .btn{flex:1 1 100%}
+  .trust b{font-size:24px}
+  .tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+  .tab{border:1px solid var(--line-d);padding:0 8px;letter-spacing:.1em;font-size:12px;border-radius:2px}
+  .tab[aria-selected=true]{border-color:transparent}
+  .plist li{flex-wrap:wrap;gap:4px 12px}
+  .svc{font-size:20px;flex:1 1 60%}
+  .dots{display:none}
+  .phones{grid-template-columns:1fr}
+  .phones li:nth-child(even){padding-left:0;border-left:0}
+  dl.info{grid-template-columns:1fr}
+  dl.info dt{border-bottom:0;padding-bottom:0}
+  dl.info dd{border-top:0;padding-top:4px}
+  .enamel .st{padding:10px 12px;font-size:11px;letter-spacing:.14em}
+  .enamel .r,.enamel .b{font-size:24px;padding:0 12px}
+  .call .big{font-size:36px}
+  .call .btn,.links .btn{align-self:stretch;width:100%}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:1px;position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--petrol);border-top:1px solid var(--line-d);padding-bottom:env(safe-area-inset-bottom)}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:56px;text-decoration:none;font:500 15px/1 var(--sans);letter-spacing:.06em;color:var(--brass-l)}
+  .mbar a:first-child{background:var(--brass);color:var(--engr)}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+<body>
+<div class="notice" role="note">Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</div>
+
+<header class="top">
+ <div class="wrap">
+  <a class="logo" href="#" aria-label="Nova Beauty — hore"><span class="logo-plate">Nova Beauty</span><small>Salón krásy<br>Prievidza</small></a>
+  <nav class="main" aria-label="Hlavná navigácia"><a href="#cennik">Cenník</a><a href="#parochne">Parochne</a><a href="#kontakt">Kontakt</a></nav>
+  <a class="hd-tel" href="tel:+421904414778"><small>Kaderníctvo</small><span class="num">0904 414 778</span></a>
+  <a class="btn" href="tel:+421904414778">Zavolať</a>
+ </div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="wrap">
+  <div class="hl">
+   <span class="lab">Nová 465/1 · Prievidza</span>
+   <h1>Nova Beauty<span>štyri oddelenia, jedny dvere</span></h1>
+   <blockquote class="quote">„Objav miesto, kde nájdeš všetko, čo tvoje telo potrebuje – od krásy až po relax.“<cite>Ich profil na Notino.sk</cite></blockquote>
+   <div class="cta-row"><a class="btn" href="tel:+421904414778">Zavolať do salónu</a><a class="btn ghost" href="#cennik">Pozrieť cenník</a></div>
+  </div>
+  <div class="frame">
+   <aside class="plate" aria-label="Oddelenia salónu a telefónne čísla">
+    <span class="screw"></span><span class="screw"></span><span class="screw"></span><span class="screw"></span>
+    <div class="plate-h">Nova Beauty · Nová 465/1</div>
+    <ul>
+     <li><a href="tel:+421904414778"><span class="dept">Kaderníctvo</span><span class="pn">0904 414 778</span></a></li>
+     <li><a href="tel:+421911055166"><span class="dept">Kozmetika</span><span class="pn">0911 055 166</span></a></li>
+     <li><a href="tel:+421907341976"><span class="dept">Nechty</span><span class="pn">0907 341 976</span></a></li>
+     <li><a href="tel:+421917596277"><span class="dept">Masáže</span><span class="pn">0917 596 277</span></a></li>
+    </ul>
+   </aside>
+   <a class="plate2" href="#parochne">Predaj a starostlivosť o parochne</a>
+  </div>
+ </div>
+</section>
+
+<section class="trust" aria-label="Hodnotenia a základné údaje">
+ <div class="wrap">
+  <div class="c"><div class="lab">Google</div><b>5,0<i>★</i></b><span class="s">72 hodnotení</span></div>
+  <div class="c"><div class="lab">Notino</div><b>5,0<i>★</i></b><span class="s">5 hodnotení</span></div>
+  <div class="c"><div class="lab">Facebook</div><b>198</b><span class="s">sledovateľov</span></div>
+  <div class="c"><div class="lab">Hodiny</div><b style="font-size:21px;line-height:1.3">Na objednanie</b><span class="s">pevné hodiny neuvádzajú — overiť</span></div>
+ </div>
+</section>
+
+<section class="dark sec" id="cennik">
+ <div class="wrap">
+  <div class="sec-h">
+   <h2>Cenník</h2>
+   <p>Vyberte oddelenie. Každé má vlastný telefón — objednáte sa priamo tam, kam idete.</p>
+  </div>
+  <div class="tabs" role="tablist" aria-label="Oddelenia">
+   <button class="tab" role="tab" id="t1" aria-controls="p1" aria-selected="true">Kaderníctvo</button>
+   <button class="tab" role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1">Kozmetika</button>
+   <button class="tab" role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1">Nechty</button>
+   <button class="tab" role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1">Masáže</button>
+  </div>
+
+  <div class="panel on" role="tabpanel" id="p1" aria-labelledby="t1">
+   <div class="plist">
+    <h3 class="grp">Dámske kaderníctvo</h3>
+    <ul>
+     <li><span class="svc">Fén<small>45–90 min</small></span><span class="dots"></span><span class="price">10–15 €</span></li>
+     <li><span class="svc">Dámsky strih<small>1 h</small></span><span class="dots"></span><span class="price">19–25 €</span></li>
+     <li><span class="svc">Farbenie + fén<small>2–4 h</small></span><span class="dots"></span><span class="price">37–45 €</span></li>
+     <li><span class="svc">Melír / balayage<small>2 h – 3 h 20 min</small></span><span class="dots"></span><span class="price">57–67 €</span></li>
+     <li><span class="svc">Botox na vlasy<small>1,5–3 h</small></span><span class="dots"></span><span class="price">80–150 €</span></li>
+     <li><span class="svc">Brazílsky keratín<small>2–3 h</small></span><span class="dots"></span><span class="price">90–180 €</span></li>
+    </ul>
+    <h3 class="grp">Pánske kaderníctvo</h3>
+    <ul>
+     <li><span class="svc">Základný strih<small>30 min</small></span><span class="dots"></span><span class="price">8 €</span></li>
+     <li><span class="svc">Strih s umytím a styling<small>30 min</small></span><span class="dots"></span><span class="price">12 €</span></li>
+     <li><span class="svc">Úprava brady<small>10 min</small></span><span class="dots"></span><span class="price">4 €</span></li>
+    </ul>
+   </div>
+   <div class="call"><span class="lab">Oddelenie</span><span style="font:400 34px/1 var(--serif)">Kaderníctvo</span><a class="big" href="tel:+421904414778">0904 414 778</a><p>Dĺžka vlasov a rozsah zákroka určujú výslednú cenu v rámci uvedeného rozpätia.</p><a class="btn brass" href="tel:+421904414778">Zavolať na kaderníctvo</a></div>
+  </div>
+
+  <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2">
+   <div class="plist">
+    <h3 class="grp">Kozmetika</h3>
+    <ul>
+     <li><span class="svc">Balíčky ošetrenia pleti<small>60–90 min</small></span><span class="dots"></span><span class="price">30–50 €</span></li>
+     <li><span class="svc">Permanentný make-up obočia<small>2–3 h</small></span><span class="dots"></span><span class="price">150 €</span></li>
+    </ul>
+   </div>
+   <div class="call"><span class="lab">Oddelenie</span><span style="font:400 34px/1 var(--serif)">Kozmetika</span><a class="big" href="tel:+421911055166">0911 055 166</a><p>Ošetrenie pleti aj permanentný make-up si dohodnete priamo na kozmetike.</p><a class="btn brass" href="tel:+421911055166">Zavolať na kozmetiku</a></div>
+  </div>
+
+  <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3">
+   <div class="plist">
+    <h3 class="grp">Nechty</h3>
+    <ul>
+     <li><span class="svc">Gél lak — manikúra<small>1 h</small></span><span class="dots"></span><span class="price">18 €</span></li>
+     <li><span class="svc">Modelácia gélom<small>1,5–2 h</small></span><span class="dots"></span><span class="price">30–35 €</span></li>
+     <li><span class="svc">Pedikúra<small>v ponuke, cena v zhrnutí chýba</small></span><span class="dots"></span><span class="price q">zavolajte</span></li>
+    </ul>
+   </div>
+   <div class="call"><span class="lab">Oddelenie</span><span style="font:400 34px/1 var(--serif)">Nechty</span><a class="big" href="tel:+421907341976">0907 341 976</a><p>Termín a cenu pedikúry vám povedia po telefóne.</p><a class="btn brass" href="tel:+421907341976">Zavolať na nechty</a></div>
+  </div>
+
+  <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4">
+   <div class="plist">
+    <h3 class="grp">Masáže</h3>
+    <ul>
+     <li><span class="svc">Manuálna lymfodrenáž<small>1–2 h</small></span><span class="dots"></span><span class="price">30–70 €</span></li>
+     <li><span class="svc">Lávové / kamenné masáže<small>1,5–2 h</small></span><span class="dots"></span><span class="price">60–70 €</span></li>
+     <li><span class="svc">Špeciálne masáže<small>1–2 h</small></span><span class="dots"></span><span class="price">40–70 €</span></li>
+    </ul>
+   </div>
+   <div class="call"><span class="lab">Oddelenie</span><span style="font:400 34px/1 var(--serif)">Masáže</span><a class="big" href="tel:+421917596277">0917 596 277</a><p>Dĺžka a druh masáže určujú cenu v uvedenom rozpätí.</p><a class="btn brass" href="tel:+421917596277">Zavolať na masáže</a></div>
+  </div>
+
+  <p class="note">Ceny podľa ponuky na <a href="https://www.notino.sk/salony/salon-krasy-nova-beauty/" rel="noopener" target="_blank">Notino.sk</a> (30. 9. 2026); rozpätie závisí od dĺžky vlasov a rozsahu zákroka. Objednať sa dá telefonicky alebo cez Notino — na tejto ukážke objednávky nefungujú.</p>
+ </div>
+</section>
+
+<section class="wig sec" id="parochne">
+ <div class="wrap">
+  <svg viewBox="0 0 240 320" role="img" aria-label="Kresba hlavy na stojane s parochňou">
+   <defs><linearGradient id="hg" x1="0" x2="1"><stop offset="0" stop-color="#9A7B44"/><stop offset=".5" stop-color="#CDAF76"/><stop offset="1" stop-color="#8F713B"/></linearGradient></defs>
+   <ellipse cx="120" cy="308" rx="60" ry="6" fill="rgba(22,38,42,.16)"/>
+   <path d="M80 308h80M120 248v60" stroke="#16262A" stroke-width="3" stroke-linecap="round"/>
+   <path d="M120 24C62 24 38 78 44 140c4 44-10 78 8 112 22-10 34-36 36-70h64c2 34 14 60 36 70 18-34 4-68 8-112 6-62-18-116-76-116z" fill="url(#hg)" stroke="#16262A" stroke-width="2" stroke-linejoin="round"/>
+   <path d="M106 196v56h28v-56" fill="#F1F0ED" stroke="#16262A" stroke-width="2"/>
+   <ellipse cx="120" cy="138" rx="50" ry="64" fill="#F1F0ED" stroke="#16262A" stroke-width="2"/>
+   <path d="M68 124c2-52 28-82 56-82 34 0 50 34 48 82-22-16-40-38-50-62-8 26-26 50-54 62z" fill="url(#hg)" stroke="#16262A" stroke-width="2" stroke-linejoin="round"/>
+   <g fill="none" stroke="#16262A" stroke-width="1.2" stroke-linecap="round" opacity=".55">
+    <path d="M122 44C96 52 76 84 70 122M122 44C108 62 96 88 86 112M130 50c22 10 36 30 40 66M138 56c14 12 24 30 28 50"/>
+    <path d="M48 130c-6 40 0 80 6 112M60 140c-4 36-2 66 4 92M192 130c6 40 0 80-6 112M180 140c4 36 2 66-4 92"/>
+   </g>
+   <path d="M104 178q16 9 32 0" fill="none" stroke="#16262A" stroke-width="1.6" stroke-linecap="round" opacity=".45"/>
+  </svg>
+  <div>
+   <span class="lab">Špeciálna ponuka</span>
+   <h2>Predaj a starostlivosť o parochne</h2>
+   <p>Takto to uvádzajú na svojom Facebooku. Všetko ostatné — výber, termín aj cenu — si vypýtajte telefonicky.</p>
+   <a class="btn" href="tel:+421904414778">Opýtať sa na parochne</a>
+  </div>
+ </div>
+</section>
+
+<div class="rule" aria-hidden="true"><i></i><i></i></div>
+
+<section class="contact sec" id="kontakt">
+ <div class="wrap">
+  <div>
+   <h2>Kontakt</h2>
+   <div class="enamel" aria-label="Adresa: Nová 465/1"><div class="st">Nová</div><div class="r">465</div><div class="b">1</div></div>
+   <dl class="info">
+    <dt>Adresa</dt><dd>Nová 465/1<br>971 01 Prievidza</dd>
+    <dt>Hodiny</dt><dd>Na objednanie (podľa Notino) — pevné hodiny nie sú uvedené, <strong>overiť</strong></dd>
+    <dt>Instagram</dt><dd><a href="https://www.instagram.com/novabeauty465/" rel="noopener" target="_blank">@novabeauty465</a></dd>
+    <dt>Facebook</dt><dd><a href="https://www.facebook.com/people/NovaBeauty/100089821511890/" rel="noopener" target="_blank">NovaBeauty</a> · 198 sledovateľov</dd>
+    <dt>Notino</dt><dd><a href="https://www.notino.sk/salony/salon-krasy-nova-beauty/" rel="noopener" target="_blank">Profil salónu na Notino.sk</a></dd>
+   </dl>
+  </div>
+  <div>
+   <span class="lab" style="color:var(--ink2)">Telefón podľa oddelenia</span>
+   <ul class="phones" style="margin-top:14px">
+    <li><a href="tel:+421904414778"><span class="lab">Kaderníctvo</span><span class="pn">0904 414 778</span></a></li>
+    <li><a href="tel:+421911055166"><span class="lab">Kozmetika</span><span class="pn">0911 055 166</span></a></li>
+    <li><a href="tel:+421907341976"><span class="lab">Nechty</span><span class="pn">0907 341 976</span></a></li>
+    <li><a href="tel:+421917596277"><span class="lab">Masáže</span><span class="pn">0917 596 277</span></a></li>
+   </ul>
+   <div class="links"><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Nov%C3%A1+465%2F1%2C+Prievidza" rel="noopener" target="_blank">Navigovať na mape</a><a class="btn ghost" href="https://www.notino.sk/salony/salon-krasy-nova-beauty/" rel="noopener" target="_blank">Objednať cez Notino</a></div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap"><div><b>Nova Beauty</b><br>Nová 465/1, 971 01 Prievidza</div><div>Neoficiálny návrh webu · <a href="https://webdavid.sk" rel="noopener">webdavid.sk</a> · 2026</div></div>
+</footer>
+
+<nav class="mbar" aria-label="Rýchle akcie"><a href="tel:+421904414778">Zavolať</a><a href="https://www.notino.sk/salony/salon-krasy-nova-beauty/" rel="noopener" target="_blank">Notino</a></nav>
+
+<noscript><style>.panel{display:grid!important}.tabs{display:none}</style></noscript>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+  function sel(t){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).classList.toggle('on',on)});}
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){sel(t)});
+    t.addEventListener('keydown',function(e){var n=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(n){var x=tabs[(i+n+tabs.length)%tabs.length];sel(x);x.focus();e.preventDefault()}});
+  });
+})();
+</script>
