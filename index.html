@@ -123,6 +123,24 @@ header.top .btn{min-height:44px;padding:0 20px}
 .note{margin-top:22px;color:#A9B5B0;font-size:14.5px;max-width:78ch}
 .note a{color:var(--brass-l)}
 
+
+/* fotografie v mosadzných rámoch */
+.bf{position:relative;margin:0;padding:15px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.07) 0 1px,transparent 1px 4px),linear-gradient(115deg,#C9AA70 0%,#E6D3A4 17%,#BE9B5D 40%,#D5BB82 63%,#A68244 100%);box-shadow:inset 0 0 0 1px rgba(80,58,22,.5),inset 0 1px 0 rgba(255,255,255,.6),0 24px 30px -22px rgba(10,20,22,.7)}
+.bf .ph{overflow:hidden;background:#cfcac3;box-shadow:0 0 0 1px rgba(54,41,15,.55)}
+.bf img{display:block;width:100%;height:auto;transition:transform .5s}
+.bf:hover img{transform:scale(1.045)}
+.bf i{position:absolute;width:9px;height:9px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#F3E6BF,#B08C50 62%,#6F5425)}
+.bf i:nth-of-type(1){top:3px;left:3px}.bf i:nth-of-type(2){top:3px;right:3px}.bf i:nth-of-type(3){bottom:3px;left:3px}.bf i:nth-of-type(4){bottom:3px;right:3px}
+.bf figcaption{font:500 11.5px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--engr);text-shadow:0 1px 0 rgba(255,244,214,.5);padding:11px 2px 0}
+.salon .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,6vw,80px);align-items:center}
+.nlogo{display:block;width:128px;height:auto;mix-blend-mode:multiply;margin:0 0 22px -8px}
+.salon h2{font:400 clamp(40px,5.4vw,68px)/1 var(--serif);margin:14px 0 20px;letter-spacing:-.01em}
+.salon .lab{color:var(--brass-d)}
+.salon p{max-width:40ch;color:var(--ink2);margin-bottom:12px}
+.salon .srcs{font-size:13.5px;letter-spacing:.02em;margin-top:22px}
+.gal-g{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,2.4vw,30px)}
+.gal .sec-h{margin-bottom:34px}
+
 /* mosadzná linka so skrutkami */
 .rule{position:relative;height:14px;max-width:calc(1180px - 2*var(--pad));margin:0 var(--pad) -7px;z-index:2}
 @media(min-width:1260px){.rule{margin-inline:auto}}
@@ -179,7 +197,8 @@ footer a{color:var(--brass-l)}
   .trust .c:nth-child(even){padding-left:22px;border-left:1px solid var(--line-d)}
   .panel.on{grid-template-columns:1fr}
   .call{border-left:0;border-top:1px solid var(--line-d)}
-  .wig .wrap,.contact .wrap{grid-template-columns:1fr}
+  .wig .wrap,.contact .wrap,.salon .wrap{grid-template-columns:1fr}
+  .gal-g{grid-template-columns:1fr 1fr}
 }
 @media(max-width:640px){
   body{padding-bottom:calc(68px + env(safe-area-inset-bottom))}
@@ -197,6 +216,7 @@ footer a{color:var(--brass-l)}
   .plist li{flex-wrap:wrap;gap:4px 12px}
   .svc{font-size:20px;flex:1 1 60%}
   .dots{display:none}
+  .gal-g{gap:12px}.bf{padding:10px}.bf i{display:none}
   .phones{grid-template-columns:1fr}
   .phones li:nth-child(even){padding-left:0;border-left:0}
   dl.info{grid-template-columns:1fr}
@@ -218,7 +238,7 @@ footer a{color:var(--brass-l)}
 <header class="top">
  <div class="wrap">
   <a class="logo" href="#" aria-label="Nova Beauty — hore"><span class="logo-plate">Nova Beauty</span><small>Salón krásy<br>Prievidza</small></a>
-  <nav class="main" aria-label="Hlavná navigácia"><a href="#cennik">Cenník</a><a href="#parochne">Parochne</a><a href="#kontakt">Kontakt</a></nav>
+  <nav class="main" aria-label="Hlavná navigácia"><a href="#cennik">Cenník</a><a href="#salon">Salón</a><a href="#parochne">Parochne</a><a href="#kontakt">Kontakt</a></nav>
   <a class="hd-tel" href="tel:+421904414778"><small>Kaderníctvo</small><span class="num">0904 414 778</span></a>
   <a class="btn" href="tel:+421904414778">Zavolať</a>
  </div>
@@ -328,6 +348,31 @@ footer a{color:var(--brass-l)}
   </div>
 
   <p class="note">Ceny podľa ponuky na <a href="https://www.notino.sk/salony/salon-krasy-nova-beauty/" rel="noopener" target="_blank">Notino.sk</a> (30. 9. 2026); rozpätie závisí od dĺžky vlasov a rozsahu zákroka. Objednať sa dá telefonicky alebo cez Notino — na tejto ukážke objednávky nefungujú.</p>
+ </div>
+</section>
+
+<section class="salon sec" id="salon">
+ <div class="wrap">
+  <div>
+   <img class="nlogo" src="assets/logo-nova-beauty.webp" width="360" height="359" loading="lazy" alt="Logo Nova Beauty: zlatá líniová kresba ženského profilu v kruhu">
+   <span class="lab">Salón</span>
+   <h2>Na Novej ulici</h2>
+   <p>Kaderníctvo, kozmetika, nechty a masáže — a k tomu predaj a starostlivosť o parochne. Nová 465/1, Prievidza.</p>
+   <p class="srcs">Fotografia a logo z Facebooku NovaBeauty.</p>
+  </div>
+  <figure class="bf"><i></i><i></i><i></i><i></i><div class="ph"><img src="assets/salon-interier.webp" width="1400" height="858" loading="lazy" alt="Interiér salónu: dve zelené zamatové pohovky, mramorový stolík s tulipánmi a svetelné kruhy na strope"></div></figure>
+ </div>
+</section>
+
+<section class="dark sec gal" id="galeria">
+ <div class="wrap">
+  <div class="sec-h"><h2>Nechty</h2><p>Ukážky prác z ich Facebooku.</p></div>
+  <div class="gal-g">
+   <figure class="bf"><i></i><i></i><i></i><i></i><div class="ph"><img src="assets/nechty-french.webp" width="640" height="640" loading="lazy" alt="Mandľové nechty s jemným bielym francúzskym lemom a oblúkom"></div></figure>
+   <figure class="bf"><i></i><i></i><i></i><i></i><div class="ph"><img src="assets/nechty-cervene-kvety.webp" width="640" height="640" loading="lazy" alt="Krátke nechty v červenej s maľovaným kvetom na prstenníku"></div></figure>
+   <figure class="bf"><i></i><i></i><i></i><i></i><div class="ph"><img src="assets/nechty-modre-margaretky.webp" width="640" height="640" loading="lazy" alt="Nechty v nebeskej modrej s jedným nechtom zdobeným drobnými kvietkami"></div></figure>
+   <figure class="bf"><i></i><i></i><i></i><i></i><div class="ph"><img src="assets/nechty-bodky.webp" width="640" height="640" loading="lazy" alt="Priesvitne ružové nechty s čiernymi bodkami"></div></figure>
+  </div>
  </div>
 </section>
 
